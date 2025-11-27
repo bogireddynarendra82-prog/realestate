@@ -10,6 +10,10 @@ import Register from "./pages/Register";
 import Dashboard from "./pages/Dashboard";
 import AddProperty from "./pages/AddProperty";
 import EditProperty from "./pages/EditProperty";    // ⬅ Added import
+import About from "./pages/About";
+import Contact from "./pages/Contact";
+
+
 
 import Header from "./components/Header";
 import ProtectedRoute from "./components/ProtectedRoute";
@@ -29,7 +33,9 @@ const App = () => (
         <Route path="/properties/:id" element={<PropertyDetail />} />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
-
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
+        
         {/* Protected Routes */}
         <Route
           path="/dashboard"
