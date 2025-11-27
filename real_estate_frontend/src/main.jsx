@@ -15,6 +15,8 @@ import Header from "./components/Header";
 import ProtectedRoute from "./components/ProtectedRoute";
 
 import { AuthProvider } from "./context/AuthContext";
+import Footer from "./components/footer";
+import SellPropertySection from "./components/SellPropertySection";
 
 const App = () => (
   <AuthProvider>
@@ -44,6 +46,7 @@ const App = () => (
             <ProtectedRoute>
               <AddProperty />
             </ProtectedRoute>
+           
           }
         />
 
@@ -56,8 +59,11 @@ const App = () => (
           }
         />
       </Routes>
+      <SellPropertySection />
+        <Footer/>
     </BrowserRouter>
   </AuthProvider>
+
 );
 
 ReactDOM.createRoot(document.getElementById("root")).render(<App />);
