@@ -12,6 +12,8 @@ export default function Header(){
           <Link to="/properties">Properties</Link>
           <Link to="/about">About</Link>
           <Link to="/contact">Contact</Link>
+
+
           {user ? (
             <>
               <Link to="/dashboard" className="px-3 py-2 rounded bg-brandBlue text-white">Dashboard</Link>
